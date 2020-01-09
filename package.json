@@ -4,9 +4,10 @@
   "description": "Index Exchange's HeaderTag Wrapper Adapter",
   "devDependencies": {
     "adapter-development-suite": "git+https://github.com/indexexchange/adapter-development-suite.git#master-mono-repo",
+    "base-adapter-template": "git+https://github.com/indexexchange/base-adapter-template.git",
     "eslint": "^4.13.1",
     "eslint-config-adapters": "git+https://github.com/indexexchange/eslint-config-adapters.git",
-    "base-adapter-template": "git+https://github.com/indexexchange/base-adapter-template.git"
+    "eslint-plugin-compat": "^3.3.0"
   },
   "scripts": {
     "debug": "node ./node_modules/adapter-development-suite/bin/index.js",
@@ -24,5 +25,11 @@
   "license": "SEE LICENSE IN LICENSE.md",
   "bugs": {
     "url": "https://github.com/indexexchange/ht-wrapper-adapters/issues"
-  }
+  },
+  "browserslist": [
+    "> 0.5% in US",
+    "last 2 versions and not dead",
+    "Firefox ESR",
+    "IE >= 9"
+  ]
 }
